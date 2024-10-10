@@ -45,12 +45,6 @@ if (Largest) {
   const n4: number = parseInt(SquareCube[4]);
   const n5: number = parseInt(SquareCube[5]);
   const n6: number = parseInt(SquareCube[6]);
-  const isSquareAndCube = (n: number): boolean => {
-  const sqrt = Math.sqrt(n);
-  const cbrt = Math.cbrt(n);
-  return Number.isInteger(sqrt) && Number.isInteger(cbrt);
-  };
-
   // Filter numbers that are both square and cube
   const numbers = [n1, n2, n3, n4, n5, n6];
   const squareAndCubeNumbers = numbers.filter(isSquareAndCube);
@@ -59,6 +53,13 @@ if (Largest) {
   if (squareAndCubeNumbers.length > 0) {
     return squareAndCubeNumbers.join(", ");
 }
+const isSquareAndCube = (n: number): boolean => {
+const sqrt = Math.sqrt(n);
+const cbrt = Math.cbrt(n);
+return Number.isInteger(sqrt) && Number.isInteger(cbrt);
+  };
+
+
 
 const Largest = query.match(/Which of the following numbers is the largest: (\d+), (\d+), (\d+)/); 
 if (Largest) {
