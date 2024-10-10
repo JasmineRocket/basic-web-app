@@ -29,4 +29,12 @@ describe("QueryProcessor", () => {
         expect(QueryProcessor("What is 5 plus 52?")).toEqual("57");
         expect(QueryProcessor("What is 12 plus 1?")).toEqual("13");
     });
+    test('should return largest numbers', () => {
+        expect(QueryProcessor("Which of the following numbers is the largest: 8, 11, 365")).toEqual("365");
+        expect(QueryProcessor("Which of the following numbers is the largest: -20, 11, 55")).toEqual("55");
+    });
+    test('should multiply numbers', () => {
+        expect(QueryProcessor("What is 8 multiplied by 9")).toEqual("72");
+        expect(QueryProcessor("What is 12 multiplied by 100")).toEqual("1200");
+    });
 });
