@@ -13,7 +13,7 @@ if (query.toLowerCase().includes("andrew id")) {
   }
 if (query.toLowerCase().includes("name")) {
     return (
-      "Jasmine_Shi"
+      "Jasmine Shi"
     );
   }
   return "";
