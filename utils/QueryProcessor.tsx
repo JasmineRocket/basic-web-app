@@ -22,6 +22,13 @@ if (addMatch) {
   const y: number = parseInt(addMatch[2]);
   return (x+y).toString();
 }
+const Largest = query.match(/Which of the following numbers is the largest: (\d+), (\d+), (\d+)/); 
+if (Largest) {
+  const x: number = parseInt(Largest[1]);
+  const y: number = parseInt(Largest[2]);
+  const z: number = parseInt(Largest[3]);
+  return Math.max(x, y, z).toString();
+}
 // if (query.toLowerCase().includes("largest: 92,58,39")) {
 //     return (
 //       "139"
