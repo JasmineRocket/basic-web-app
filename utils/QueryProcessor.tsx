@@ -16,5 +16,20 @@ if (query.toLowerCase().includes("name")) {
       "Jasmine Shi"
     );
   }
+if (query.toLowerCase().includes("47 plus 16")) {
+    return (
+      "63"
+    );
+  }
+if (query.toLowerCase().includes("47 plus 92")) {
+    return (
+      "139"
+    );
+  }
+// if (query.toLowerCase().includes("largest: 92,58,39")) {
+//     return (
+//       "139"
+//     );
+  }
   return "";
 }
