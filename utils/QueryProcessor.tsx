@@ -30,6 +30,6 @@ if (query.toLowerCase().includes("47 plus 92")) {
 //     return (
 //       "139"
 //     );
-  }
+  // }
   return "";
 }
