@@ -26,7 +26,7 @@ describe("QueryProcessor", () => {
           ));
     });
     test('should add numbers', () => {
-    expect(QueryProcessor("What is 5 plus 52?")).toEqual("57");
-    expect(QueryProcessor("What is 12 plus 1?")).toEqual("13");
+        expect(QueryProcessor("What is 5 plus 52?")).toEqual("57");
+        expect(QueryProcessor("What is 12 plus 1?")).toEqual("13");
     });
 });
