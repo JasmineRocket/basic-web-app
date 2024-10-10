@@ -29,6 +29,14 @@ if (Largest) {
   const z: number = parseInt(Largest[3]);
   return Math.max(x, y, z).toString();
 }
+
+const multiplyMatch = query.match(/What is (\d+) multiplied by (\d+)/); 
+if (Largest) {
+  const x: number = parseInt(multiplyMatch[1]);
+  const y: number = parseInt(multiplyMatch[2]);
+  return (x*y).toString();
+}
+
 // if (query.toLowerCase().includes("largest: 92,58,39")) {
 //     return (
 //       "139"
